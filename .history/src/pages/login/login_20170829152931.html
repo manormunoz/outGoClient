@@ -1,0 +1,24 @@
+<ion-content scroll="false">
+  <div class="splash-bg"></div>
+  <div class="splash-info">
+    <div class="splash-logo"></div>
+    <div class="splash-intro">
+      {{ 'WELCOME_INTRO' }}
+    </div>
+  </div>
+  <div padding>
+    <div class="social-buttons-pane">
+      <div class="social-buttons-container" padding-left padding-right>
+        <button (click)="loginFb()" ion-button block full class="social-button social-button-facebook" type="button">
+          <div class="social-button-icon social-button-icon-facebook"></div>
+          <div class="social-button-text">Entrar con facebook</div>
+        </button>
+
+        <button (click)="logiG()" ion-button block full class="social-button social-button-google" type="button">
+          <div class="social-button-icon social-button-icon-google"></div>
+          <div class="social-button-text">Entrar con Google</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,128 @@
+page-login {
+  .splash-bg {
+    position: relative;
+    background: url('https://i0.wp.com/www.mdscreditrepair.com/wp-content/uploads/2015/07/e-1.jpg?fit=1500%2C500') no-repeat transparent;
+    background-size: cover;
+    height: 45%;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: animatedBackground 40s linear infinite;
+  }
+
+  @keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+
+  .splash-info {
+    position: relative;
+    z-index: 2;
+    margin-top: -64px;
+    text-align: center;
+  }
+  .splash-logo {
+    margin: auto;
+    background: url('http://www.freeiconspng.com/uploads/wallet-with-money-icon-10.png') repeat transparent;
+    background-size: 100%;
+    width: 128px;
+    height: 128px;
+  }
+  .splash-intro {
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 80%;
+    margin: auto;
+  }
+  button.login {
+    margin-top: 25px;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    color: #333;
+
+    &.activated {
+      background-color: rgb(220, 220, 220);
+    }
+  }
+
+
+  .social-buttons-pane{
+    //position: relative;
+    .social-buttons-container{
+      text-align: center;
+      box-sizing: initial;
+      pointer-events: auto;
+      //position: relative;
+
+      .social-button{
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        margin: 10px 0 0;
+        width: 100%;
+        border: 0;
+        padding: 0;
+        display: inline-block;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 3px;
+        margin: 4px;
+        //position: relative;
+        height: 40px;
+        text-rendering: auto;
+        letter-spacing: normal;
+        text-indent: 0px;
+        text-shadow: none;
+        word-spacing: normal;
+      }
+      .social-button-google{
+        background-color: #4285f4;
+      }
+      .social-button-facebook{
+        background-color: #3b5998;
+      }
+      .social-button:first-child {
+        margin-top: 0;
+      }
+      .social-button-icon {
+        background-color: rgba(0,0,0,0.3);
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center center;
+        transition: background-color 0.3s;
+        -webkit-transition: background-color 0.3s;
+      }
+      .social-button-icon-google{
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjU3cHgiIGhlaWdodD0iNThweCIgdmlld0JveD0iMCAwIDU3IDU4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy40ICgxNTU4OCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Z29vZ2xlPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9Imdvb2dsZSIgc2tldGNoOnR5cGU9Ik1TTGF5ZXJHcm91cCIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0yOS4wMDQsMzQuNDE0IEwyOS4wMDQsMjMuODEyIEw1NS42OCwyMy44MTIgQzU2LjA4LDI1LjYwOCA1Ni4zOTIsMjcuMjg4IDU2LjM5MiwyOS42NTQgQzU2LjM5Miw0NS45MjggNDUuNDc2LDU3LjQ5OCAyOS4wMzIsNTcuNDk4IEMxMy4zLDU3LjQ5OCAwLjUzMiw0NC43MyAwLjUzMiwyOC45OTggQzAuNTMyLDEzLjI2NiAxMy4zLDAuNDk4IDI5LjAzMiwwLjQ5OCBDMzYuNzI4LDAuNDk4IDQzLjE2OCwzLjMyIDQ4LjA5OCw3LjkzNiBMNDAuMDA0LDE1LjgwMiBDMzcuOTUyLDEzLjg2NCAzNC4zNiwxMS41ODQgMjkuMDMyLDExLjU4NCBDMTkuNTk4LDExLjU4NCAxMS45MDQsMTkuNDIyIDExLjkwNCwyOS4wMjYgQzExLjkwNCwzOC42MyAxOS42LDQ2LjQ2OCAyOS4wMzIsNDYuNDY4IEMzOS45NDgsNDYuNDY4IDQzLjk2NiwzOC45MTYgNDQuNzA2LDM0LjQ0IEwyOS4wMDIsMzQuNDQgTDI5LjAwMiwzNC40MTIgTDI5LjAwNCwzNC40MTQgWiIgaWQ9IlNoYXBlIiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=");
+      }
+      .social-button-icon-facebook{
+        background-size: 25%;
+        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjM2cHgiIGhlaWdodD0iNjVweCIgdmlld0JveD0iMCAwIDM2IDY1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy40ICgxNTU4OCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+ZmFjZWJvb2s8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4KICAgICAgICA8ZyBpZD0iZmFjZWJvb2siIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiIGZpbGw9IiNGRkZGRkYiPgogICAgICAgICAgICA8cGF0aCBkPSJNMC45MzgsMzUgTDEwLjc1MSwzNSBMMTAuNzUxLDY0LjYyNSBMMjMuMDY0LDY0LjYyNSBMMjMuMDY0LDM1IEwzNS4zNzcsMzUgTDM1LjM3NywyMi43NSBMMjMuMDY0LDIyLjc1IEwyMy4wNjQsMTYuNSBDMjMuMDY0LDE1LjQzNyAyMy4zMTQsMTQuNjI1IDIzLjgxNCwxMy44NzUgQzI0LjM3NywxMy4xODcgMjQuOTM5LDEyLjg3NSAyNS41NjQsMTIuODc1IEwzNS4zNzcsMTIuODc1IEwzNS4zNzcsMC42MjUgTDI1LjU2NCwwLjYyNSBDMjEuNDM5LDAuNjI1IDE4LjAwMSwyLjE4OCAxNS4xMjYsNS4zMTMgQzEyLjE4OCw4LjQzOCAxMC43NTEsMTIuMTg4IDEwLjc1MSwxNi42MjYgTDEwLjc1MSwyMi43NTEgTDAuOTM4LDIyLjc1MSBMMC45MzgsMzUuMDAxIEwwLjkzOCwzNSBaIiBpZD0iU2hhcGUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+      }
+      .social-button-text{
+        box-sizing: border-box;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        padding-left: 54px;
+        padding-right: 15px;
+        line-height: 40px;
+        text-align: left;
+        text-transform: uppercase;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.7px;
+        color: #fff;
+        white-space: nowrap;
+        transition: background 0.3s;
+        -webkit-transition: background 0.3s;
+      }
+    }
+  }
+}
